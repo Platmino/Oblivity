@@ -300,6 +300,7 @@ function Library:New3DCircle()
         Transparency = 1;
         Color        = nColor(255, 255, 255);
         Thickness    = 1;
+        Sides        = 360;
         
         Position     = nVector3(0,0,0);
         Radius       = 10;
@@ -315,7 +316,7 @@ function Library:New3DCircle()
     
         _lines = {};
     
-        for l = 1, 360 do -- Create 360 lines for a smooth circle
+        for l = 1, _circle.Sides do -- Create 360 lines for a smooth circle
             _lines[l] = nDrawing("Line");
         end;
     end;    
