@@ -300,7 +300,7 @@ function Library:New3DCircle()
         Transparency = 1;
         Color        = nColor(255, 255, 255);
         Thickness    = 1;
-        Sides        = 360;
+        Sides        = 30;
         
         Position     = nVector3(0,0,0);
         Radius       = 10;
